@@ -3,9 +3,9 @@ if exists('loaded_colorcolumn2_plugin')
 endif
 let loaded_colorcolumn2_plugin = 1
 
-if !exists('g:colorcolumn2_enable_filetypes')
-    let g:colorcolumn2_enable_filtypes = []
-endif
+"if !exists('g:colorcolumn2_enable_filetypes')
+"    let g:colorcolumn2_enable_filtypes = []
+"endif
 
 if !exists('g:colorcolumn2_ignore_filetypes')
     let g:colorcolumn2_ignore_filetypes = []
