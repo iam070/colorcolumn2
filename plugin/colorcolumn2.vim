@@ -30,7 +30,7 @@ function! ShouldMatchColorColumn()
     return 1
 endfunction
 
-function! ColorColumnBgSet()
+function! ColorColumn2BgSet()
     exec 'highlight ColorColumn ctermbg='.g:colorcolumn2_ctermbg
     exec 'highlight ColorColumn guibg='.g:colorcolumn2_guibg
 endfunction
@@ -53,8 +53,9 @@ function! ColorColumn2Toggle()
     endif
 endfunction
 
-call ColorColumnBgSet()
+call ColorColumn2BgSet()
 autocmd BufRead,BufNewFile * if ShouldMatchColorColumn() |  call ColorColumn2Enable() | endif
+command! ColorColumn2BgSet call ColorColumn2BgSet()
 command! ColorColumn2Enable call ColorColumn2Enable()
 command! ColorColumn2Disable call ColorColumn2Disable()
 command! ColorColumn2Toggle call ColorColumn2Toggle()
