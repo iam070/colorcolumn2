@@ -1,0 +1,56 @@
+*colorcolumn2.txt*                            colorcolumn2
+
+A simple colorcolumn plugin base on Vim :colorcolumn command
+
+                                            *colorcolumn2*
+
+The repo is at http://github.com/iam070/colorcolumn2.git
+
+------------------------------------------------------------------------------
+VARIABLES                                   *colorcolumn2-variables*
+
+                                            *g:colorcolumn2_ctermbg*
+g:colorcolumn2_ctermbg
+    You can set the bg color of colorcolumn under cterm by this variable.
+
+    let g:colorcolumn2_ctermbg = 244
+
+    The default ctermbg value is 236
+
+                                            *g:colorcolumn2_guibg*
+g:colorcolumn2_guibg
+    You can set the bg color of colorcolumn under gui by this variable
+
+    let g:colorcolumn2_guibg = '#333333'
+
+    The default ctermbg value is '#232526'
+
+                                            *g:colorcolumn2_ignore_filetypes*
+g:colorcoloumn2_ignore_filetypes
+    You can set filetypes to be ignored for color column into this variable.
+
+    let g:colorcolumn2_ignore_filetypes = ['text', 'startify']
+
+    The default value is [].
+
+                                            *g:colorcolumn2_column_list*
+g:colorcolumn2_column_list
+    You can set multiple color columns.
+
+    let g:colorcolumn2_column_list = ['80', '100']
+
+    The default value is ['80'].
+
+------------------------------------------------------------------------------
+COMMAND                                     *colorcolumn2-command*
+
+ColorColumn2Toggle                          *ColorColumn2Toggle*
+
+ColorColumn2Enable                          *ColorColumn2Enable*
+
+ColorColumn2Disable                         *ColorColumn2Disable*
+
+ColorColumn2BgSet                           *ColorColumn2BgSet*
+
+
+ vim:tw=78:et:ft=help:norl:
